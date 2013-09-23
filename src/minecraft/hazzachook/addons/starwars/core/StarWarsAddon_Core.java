@@ -20,7 +20,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 	
         //Just Some Basic Info
-        @Mod(modid = "hazzachooks_star_wars_addon", name = "Hazzchooks Star Wars Mod Addon", version = "1.0.0-Pre-Alpha")
+        @Mod(modid = "hazzachooks_star_wars_addon", name = "Hazzchooks Star Wars Mod Addon", version = "1.0.1-Pre-Alpha")
         @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
          public class StarWarsAddon_Core {
