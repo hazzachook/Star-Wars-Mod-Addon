@@ -1,4 +1,4 @@
-Credits
+CREDITS
 =======
 JavaBuckets-They created the star wars mod
 , hazzachook-He created this addon
