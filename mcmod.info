@@ -1,0 +1,20 @@
+[
+{
+  "modid": "hazzachooks_star_wars_mod_addon",
+  "name": "hazzachooks Star Wars Mod Addon",
+  "description": "Adds lots more items and other things to the star wars mod created by JavaBuckets",
+  "version": "1.0.1-Pre-Alpha",
+  "mcversion": "1.6.2",
+  "url": "",
+  "updateUrl": "",
+  "authors": [
+    "hazzachook - hazzachook created this addon, Flashy3 - Flashy3 created the textures for this addon, JavaBuckets they created the star wars mod"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":""
+}
+]
+
