@@ -6,7 +6,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.MathHelper;
 
-public class Model_deathwatch extends ModelBase
+public class Model_pre_vizsla extends ModelBase
 {
   //fields
     ModelRenderer head;
@@ -16,7 +16,7 @@ public class Model_deathwatch extends ModelBase
     ModelRenderer rightleg;
     ModelRenderer leftleg;
   
-  public Model_deathwatch()
+  public Model_pre_vizsla()
   {
     textureWidth = 64;
     textureHeight = 32;
@@ -62,7 +62,7 @@ public class Model_deathwatch extends ModelBase
   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
   {
     super.render(entity, f, f1, f2, f3, f4, f5);
-    setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+    setRotationAngles(f, f1, f2, f3, f4, f5);
     head.render(f5);
     body.render(f5);
     rightarm.render(f5);
@@ -78,22 +78,35 @@ public class Model_deathwatch extends ModelBase
     model.rotateAngleZ = z;
   }
   
-  public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity par6Entity)
+  public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5)
   {
-    this.head.rotateAngleY = f3 / (180F / (float)Math.PI);
-    this.head.rotateAngleX = f4 / (170F / (float)Math.PI);
-    
-    this.leftleg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
-    this.leftleg.rotateAngleY = 0.0F;
-    
-    this.rightleg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
-    this.rightleg.rotateAngleY = 0.0F;
-    
-    this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
-    this.leftarm.rotateAngleZ = 0.0F;
-    
-    this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
-    this.rightarm.rotateAngleZ = 0.0F;
+	    this.head.rotateAngleY = f3 / (180F / (float)Math.PI);
+	    this.head.rotateAngleX = f4 / (170F / (float)Math.PI);
+	    
+	    this.leftleg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+	    this.leftleg.rotateAngleY = 0.0F;
+	    
+	    this.rightleg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+	    this.rightleg.rotateAngleY = 0.0F;
+	    
+	    this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+	    this.leftarm.rotateAngleZ = 0.0F;
+	    
+	    this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
+	    this.rightarm.rotateAngleZ = 0.0F;    this.head.rotateAngleY = f3 / (180F / (float)Math.PI);
+	    this.head.rotateAngleX = f4 / (170F / (float)Math.PI);
+	    
+	    this.leftleg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+	    this.leftleg.rotateAngleY = 0.0F;
+	    
+	    this.rightleg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+	    this.rightleg.rotateAngleY = 0.0F;
+	    
+	    this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+	    this.leftarm.rotateAngleZ = 0.0F;
+	    
+	    this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
+	    this.rightarm.rotateAngleZ = 0.0F;
   }
 
 }

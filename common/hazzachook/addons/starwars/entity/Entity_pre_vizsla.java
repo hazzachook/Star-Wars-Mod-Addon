@@ -14,9 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class Entity_deathwatch extends EntityMob {
+public class Entity_pre_vizsla extends EntityMob {
 
-	public Entity_deathwatch(World par1World) {
+	public Entity_pre_vizsla(World par1World) {
 		super(par1World);
 		this.experienceValue = 10;
 		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true));
@@ -35,9 +35,15 @@ public class Entity_deathwatch extends EntityMob {
 
 
     public int getMaxHealth() {
-        	return 15;
+        	return 20;
     }
+    protected void addRandomArmor()
+    {
+        this.setCurrentItemOrArmor(0, new ItemStack(StarWarsAddon_Core.darkBlade));
+    }
+
     
+
     }
 
     
